@@ -7,13 +7,13 @@ namespace optimization
 
 PSO::PSO(const size_t maxIter,
          const size_t swarmSize,
-         double intertia,
-         const double inertiaDamp,
+         double inertia,
+         const double inertiaDrop,
          const double c1,
          const double c2) : maxIter(maxIter),
                             swarmSize(swarmSize),
-                            intertia(intertia),
-                            inertiaDamp(inertiaDamp),
+                            inertia(inertia),
+                            inertiaDrop(inertiaDrop),
                             c1(c1),
                             c2(c2)
 {
@@ -92,7 +92,7 @@ double PSO::Optimize(PSOTestFunction function,
                 double r1 = ((double)rand() / (RAND_MAX));
                 double r2 = ((double)rand() / (RAND_MAX));
 
-                swarm[i].velocity[j] = (intertia * swarm[i].velocity[j]) +
+                swarm[i].velocity[j] = (inertia * swarm[i].velocity[j]) +
                                        (r1 * c1 * (swarm[i].pBest.position[j] - swarm[i].position[j])) +
                                        (r2 * c2 * (gBest.position[j] - swarm[i].position[j]));
 
@@ -124,7 +124,7 @@ double PSO::Optimize(PSOTestFunction function,
             }
         }
 
-        intertia *= inertiaDamp;
+        inertia *= inertiaDrop;
     }
 
     for (size_t j = 0; j < vecSpace; j++)
