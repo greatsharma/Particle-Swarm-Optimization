@@ -5,4 +5,6 @@
 #include <time.h>
 #include <cstddef>
 
+#include "optimizer_bits/pso/pso.hpp"
+
 #endif
