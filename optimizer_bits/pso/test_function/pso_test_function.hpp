@@ -12,7 +12,10 @@ class PSOTestFunction
 {
 public:
   /**
-    * PSOTestFunction is the function which we will optimize.
+    * PSOTestFunction is a simple sphere function,
+    * f(x_1, x_2, ...) = x_1 ^ 2 + x_2 ^ 2 + ...
+    * 
+    * This function is needed to be optimized.
     * 
     * @param vecSpace Vector space of the function.
     * @param minFuncRange Minimum range of function in every dimension
