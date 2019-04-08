@@ -1,5 +1,4 @@
 #include "../optimizer.hpp"
-#include "../optimizer_bits/pso/pso.hpp"
 
 using namespace std;
 using namespace optimization;
