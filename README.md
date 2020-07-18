@@ -1,3 +1,3 @@
 # Particle-Swarm-Optimization
 
-A neat implementation of Particle-Swarm-Optimization in C++ from scratch. Refer [this](https://www.youtube.com/watch?v=JhgDMAm-imI) to know more about PSO. To get a full grasp of this repository you need to have a working hand in C++ but if algorithm is your only need then jump to [this](double PSO::Optimize(PSOTestFunction function,) directly.
+A neat implementation of Particle-Swarm-Optimization in C++ from scratch. Refer [this](https://www.youtube.com/watch?v=JhgDMAm-imI) to know more about PSO. To get a full grasp of this repository you need to have a working hand in C++ but if algorithm is your only need then jump to [this](https://github.com/greatsharma/Particle-Swarm-Optimization/blob/b0866bb3aa406acaaa5ba34c5122fee5c93a5262/optimizer_bits/pso/pso_impl.hpp#L23) directly, it's the brain of this optimzer i.e., the function which optimize the objective, for eg, the sphere function shown in this repository.
